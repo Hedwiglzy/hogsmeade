@@ -1,7 +1,7 @@
 spring:
   datasource:  # 配置mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysqldb1:3306/dev?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://mysqldb1:3306/dev
     username: root
     password: hasaiki
   jpa:
