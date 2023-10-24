@@ -1,13 +1,13 @@
 spring:
-  datasource:  # 配置mysql
+  datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysqldb1:3306/dev
+    url: jdbc:mysql://mysqldb1:3317/dev?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: hasaiki
   jpa:
-    show-sql: true
     hibernate:
       ddl-auto: update
-    
+    show-sql: true
+
 server:
   port: 8080  # 默认端口

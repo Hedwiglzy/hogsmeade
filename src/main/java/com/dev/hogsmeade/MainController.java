@@ -28,6 +28,14 @@ public class MainController {
     return "Saved";
   }
 
+  @PostMapping(path="/del") // Map ONLY POST Requests
+  public @ResponseBody String delUser (@RequestParam Integer id
+      ) {
+        
+    userRepository.deleteById(id);
+    return "Delete";
+  }
+
   @GetMapping(path="/all")
   public @ResponseBody Iterable<User> getAllUsers() {
     // This returns a JSON or XML with the users
